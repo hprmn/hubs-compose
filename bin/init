@@ -1,7 +1,8 @@
 #!/bin/bash
 hash mutagen-compose || exit 1
 
-basedir=$(readlink -f "$(dirname "$0")/..")
+basedir=$(greadlink -f "$(dirname "$0")/..")
+
 servicesdir=$basedir/services
 composefile=$basedir/docker-compose.yml
 bright='\033[1;37m'
